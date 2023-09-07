@@ -86,7 +86,7 @@
                 Thane
               </li>
               <li>
-              <span>2022 - Current</span><br />B.Tech from VIT, Wadala
+                <span>2022 - Current</span><br />B.Tech from VIT, Wadala
               </li>
             </ul>
           </div>
@@ -104,7 +104,6 @@
           <i class="fa-solid fa-code"></i>
           <h2>Web Development</h2>
           <p>
-
             I'm a web development novice, creating simple, functional websites to kickstart your online presence.</p>
           <a href="#">Learn More</a>
         </div>
@@ -129,7 +128,7 @@
   <!-- PORTFOLIO -->
   <div id="portfolio">
     <div class="container">
-      <h1 class="subtitle">My Work</h1>
+      <h1 class="subtitle">Projects</h1>
       <div class="work_list">
         <div class="work">
           <img src="images/work-1.png">
@@ -137,7 +136,7 @@
             <h3>Weather App</h3>
             <p>
               Experience precise weather forecasts through our professionally-crafted app, powered by Rapid API.</p>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="https://adityakachare.github.io/PRODIGY_WD_05/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
         </div>
         <div class="work">
@@ -147,7 +146,8 @@
             <p>
               Experience the classic game of Tic Tac Toe, enhanced with HTML, CSS, and JavaScript, driven by the
               formidable Minimax algorithm.</p>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="https://adityakachare.github.io/PRODIGY_WD_03/" target="_blank"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
         </div>
         <div class="work">
@@ -155,7 +155,8 @@
           <div class="layer">
             <h3>Stopwatch</h3>
             <p>Efficiently track time with our HTML, CSS, and JavaScript-powered stopwatch.</p>
-            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href="https://adityakachare.github.io/PRODIGY_WD_02/" target="_blank"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
         </div>
       </div>
@@ -179,13 +180,13 @@
           <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
         </div>
         <div class="contact_right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required>
-              <input type="email" name="Email" placeholder="Your Email" required>
-              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <span id="msg"></span>
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
         </div>
       </div>
     </div>
@@ -207,12 +208,12 @@
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
       .then(response => {
         msg.innerHTML = "Message sent successfully";
-        setTimeout(function(){
+        setTimeout(function () {
           msg.innerHTML = "";
-        },5000)
+        }, 5000)
         form.reset();
       })
-      
+
       .catch(error => console.error('Error!', error.message))
   })
 </script>
