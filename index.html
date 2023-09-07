@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/f26f01c4ec.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo" />
+        <ul id="side_menu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-regular fa-circle-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fas fa-solid fa-bars" onclick="openMenu()"></i>
+      </nav>
+      <div class="header_text">
+        <p>Full Stack Web Developer</p>
+        <h1>
+          Hello, I'm <span>आदित्य.</span><br />Crafting digital dreams.
+          <br />"Stacked" with humor!💻<br />Let's get creative🚀
+        </h1>
+      </div>
+    </div>
+  </div>
+  <!-- ABOUT -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about_col_1">
+          <img src="images/user.png" alt="" />
+        </div>
+        <div class="about_col_2">
+          <h1 class="subtitle">About Me</h1>
+          <p class="about_desc">
+            Howdy, I'm Aditya, your friendly neighborhood aspiring full-stack
+            web dev. No capes, just a coding newbie wrangling web mysteries.
+            By day, I'm learning the ropes; by night, I'm battling bugs (with
+            my trusty coffee). My secret? Turning caffeine into code that
+            hopefully makes websites dance and users smile. Ready for
+            web-tastic adventures and learning? Let's team up! 💻🚀😄
+          </p>
+
+          <div class="tab_titles">
+            <p class="tab_links active_link" onclick="openTab('skills')">
+              Skills
+            </p>
+            <p class="tab_links" onclick="openTab('experience')">
+              Experience
+            </p>
+            <p class="tab_links" onclick="openTab('education')">Education</p>
+          </div>
+
+          <div class="tab_contents active_tab" id="skills">
+            <ul>
+              <li><span>Web Development</span><br />Website Development</li>
+              <li>
+                <span>App Developement</span><br />Building Android Apps
+              </li>
+              <li>
+                <span>Front End Developement</span><br />Designing Website
+                Interfaces
+              </li>
+            </ul>
+          </div>
+          <div class="tab_contents" id="experience">
+            <ul>
+              <li><span>2023</span><br />Intern at Prodigy</li>
+            </ul>
+          </div>
+          <div class="tab_contents" id="education">
+            <ul>
+              <li>
+              <li>
+                <span>2019 - 2022</span><br />Diploma from VPM's Polytechnic,
+                Thane
+              </li>
+              <li>
+              <span>2022 - Current</span><br />B.Tech from VIT, Wadala
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <div id="services">
+    <div class="container">
+      <h1 class="subtitle">My Services</h1>
+      <div class="services_list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Development</h2>
+          <p>
+
+            I'm a web development novice, creating simple, functional websites to kickstart your online presence.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+
+          <h2>App Development</h2>
+          <p>
+            I'm an aspiring app developer, building basic apps to bring your ideas to life.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop"></i>
+          <h2>Front End Developer</h2>
+          <p>
+            I'm a beginner in front-end development, crafting user-friendly web interfaces one step at a time.</p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- PORTFOLIO -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="subtitle">My Work</h1>
+      <div class="work_list">
+        <div class="work">
+          <img src="images/work-1.png">
+          <div class="layer">
+            <h3>Weather App</h3>
+            <p>
+              Experience precise weather forecasts through our professionally-crafted app, powered by Rapid API.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.png">
+          <div class="layer">
+            <h3>Tic-Tac-Toe</h3>
+            <p>
+              Experience the classic game of Tic Tac Toe, enhanced with HTML, CSS, and JavaScript, driven by the
+              formidable Minimax algorithm.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png">
+          <div class="layer">
+            <h3>Stopwatch</h3>
+            <p>Efficiently track time with our HTML, CSS, and JavaScript-powered stopwatch.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a> <!-- UNDER DEVELOPMENT -->
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact_left">
+          <h1 class="subtitle">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i>aadityakachare132@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>9224303446</p>
+          <div class="social_icons">
+            <a href="https://twitter.com/AdityaKachare11"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="https://www.instagram.com/ad_tya02/"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/aditya-kachare-881705233/"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact_right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyright">
+    <p>Copyright @Aditya. Made with <i class="fa-solid fa-heart"></i> by <span>आदित्य कचरे</span>!</p>
+  </div>
+</body>
+<script src="js/script.js"></script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwNU-cwfvpR3a7P-PaAuyqz5jVMlXf2nbqqAxZE3BjVlBqrFRWipu37Dgb47cUH98VNiw/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+      .then(response => {
+        msg.innerHTML = "Message sent successfully";
+        setTimeout(function(){
+          msg.innerHTML = "";
+        },5000)
+        form.reset();
+      })
+      
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</html>
